@@ -14,6 +14,6 @@ def longest_string(strings)
 end
 
 # check for strings in the array
-# select the strings and put it in another array
+# select the strings and put it in strings array
 # compare the number of characters in the new array
 # return the highest word length
