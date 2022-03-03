@@ -6,5 +6,14 @@
  # @returns {String} The longest string from within the input array.
 #
 def longest_string(strings)
-
+  strings_array = []
+  strings.select do |string|
+    strings_array << string if string.instance_of?(String)
+  end
+  strings_array.max_by(&:length)
 end
+
+# check for strings in the array
+# select the strings and put it in another array
+# compare the number of characters in the new array
+# return the highest word length
