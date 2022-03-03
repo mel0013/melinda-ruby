@@ -8,7 +8,7 @@
 def longest_string(strings)
   strings_array = []
   strings.select do |string|
-    strings_array << string if string.instance_of?(String)
+    strings_array << string if string.is_a?(String)
   end
   strings_array.max_by(&:length)
 end
