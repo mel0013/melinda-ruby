@@ -6,11 +6,9 @@
  # @returns {Number} The sum of all integers contained in the input, at any level.
 #
 def array_sum(start_of_tree)
-  numbers_array = []
-
   array = start_of_tree.flatten
-  array.select do |number|
-    numbers_array << number if number.is_a?(Integer)
+  numbers_array = array.select do |number|
+    number if number.is_a?(Integer)
   end
 
   numbers_array.sum
